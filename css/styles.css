@@ -667,16 +667,14 @@ h3 {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
-
   color: var(--secondary-color);
   background-color: var(--border-color);
   transition: background-color var(--transition-duration)
       var(--transition-timing-function),
     border var(--transition-duration) var(--transition-timing-function);
 }
-
 .icon-modal {
-  fill: currentColor;
+  fill: var(--secondary-color);
   transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
