@@ -553,6 +553,30 @@ h3 {
   overflow: hidden;
 }
 
+.slide-text {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: var(--grey-color);
+  background-color: var(--accent-color);
+  padding-top: 40px;
+  padding-left: 32px;
+  padding-right: 32px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  transform: translatey(100%);
+  transition: transform var(--transition-duration)
+    var(--transition-timing-function);
+}
+
+.list-portfolio .link:hover .slide-text,
+.list-portfolio .link:focus .slide-text {
+  transform: translatey(0);
+}
+
+/* Мій варіант
 .overlay-portfolio {
   position: absolute;
   top: 100%;
@@ -567,7 +591,6 @@ h3 {
   transition: transform var(--transition-duration)
     var(--transition-timing-function);
 }
-
 .list-portfolio .link:hover .overlay-portfolio,
 .list-portfolio .link:focus .overlay-portfolio {
   transform: translatey(-100%);
@@ -579,7 +602,7 @@ h3 {
   color: var(--white-color);
   letter-spacing: 0.02em;
   line-height: 1.5;
-}
+} */
 
 /* Modal */
 
